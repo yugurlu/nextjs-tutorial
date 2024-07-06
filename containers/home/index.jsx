@@ -21,7 +21,7 @@ export default function HomeContainer({
         }
       />
       <Categories categories={categories.slice(0, 5)} />
-      {selectedCategory?.movies.length ? (
+      {selectedCategory?.movies?.length ? (
         <MovieSection
           title={
             categories.filter((genre) => genre.id == selectedCategory.id)[0]

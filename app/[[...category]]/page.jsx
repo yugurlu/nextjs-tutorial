@@ -2,12 +2,6 @@ import HomeContainer from "@/containers/home";
 import { getCategories, getMoviesByCategory, getNowPlayingMovies, getPopularMovies, getTopRatedMovies } from "@services/movie";
 
 export default async function HomePage({ params }) {
-  var categories = [],
-    popularMovies = [],
-    topRatedMovies = [],
-    nowPlayingMovies = [],
-    selectedCategoryMovies = [];
-
   if (params?.category?.length === 1) {
     var { genres: categories } = await getCategories();
     var { results: selectedCategoryMovies } = await getMoviesByCategory(
