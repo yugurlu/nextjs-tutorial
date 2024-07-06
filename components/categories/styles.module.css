@@ -1,0 +1,27 @@
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  border: 1px solid #333;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+  width: 100%; 
+  border-radius: 99999px;
+  padding: 1rem;
+  font-weight: 700;
+  transition: all 0.3s ease; 
+}
+
+.category:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  scale: 1.02 ;
+}
